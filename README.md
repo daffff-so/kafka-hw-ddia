@@ -173,23 +173,6 @@ KEY_MODE=none docker compose up -d --build
 ![Продюсер запущен без ключа](screenshots/experiment-3-key-none.png)
 
 ![Проверка запуска без ключа](screenshots/experiment-3-verify.png)
-
-## Полезные команды
-
-```bash
-docker compose ps
-docker compose logs -f --tail=100
-docker compose --profile tools run --rm verify
-docker compose down
-docker compose down -v   # удалить Kafka, PostgreSQL и состояние seq
-```
-
-## Что приложить к сдаче
-
-- этот репозиторий и запускаемый `docker-compose.yaml`;
-- README с вашей гипотезой и фактическим результатом каждого эксперимента;
-- не более двух выразительных скриншотов на эксперимент;
-- для DevOps/ФиБ — скринкаст до одной минуты и PR по правилам задания;
 - для MSE/MHS — отправка решения в Google Classroom.
 
 Перед защитой необходимо понимать выбор ключа и числа партиций, стратегию commit offset, устройство повторов и DLT, а также причину результатов каждого эксперимента.
