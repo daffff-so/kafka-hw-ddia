@@ -1,0 +1,2 @@
+"""Kafka homework application package."""
+
